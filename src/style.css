@@ -1,6 +1,9 @@
 body {
-  background-color: #83838385;
+  color: black;
+  background-image: url("https://wallpapercave.com/wp/wp11152204.jpg");
   font-family: sans-serif;
+  background-size: 2000px;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -22,6 +25,7 @@ select {
   font-size: 17px;
 }
 footer {
+  color: white;
   text-align: center;
   font-size: 18px;
 }
@@ -29,7 +33,7 @@ footer {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background: white;
+  background: #ffff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -58,4 +62,9 @@ footer {
   font-size: 24px;
   line-height: 36px;
   vertical-align: middle;
+}
+
+.link {
+  color: #ff0000;
+  text-decoration: none;
 }
