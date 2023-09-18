@@ -12,15 +12,39 @@ function updateTime() {
     );
   }
 
-  // Brazil
-  let brazilElement = document.querySelector("#brazil");
-  if (brazilElement) {
-    let brazilDateElement = brazilElement.querySelector(".date");
-    let brazilTimeElement = brazilElement.querySelector(".time");
-    let brazilTime = moment().tz("Brazil/East");
+  // Sao Paulo
+  let saopauloElement = document.querySelector("#sao-paulo");
+  if (saopauloElement) {
+    let saopauloDateElement = saopauloElement.querySelector(".date");
+    let saopauloTimeElement = saopauloElement.querySelector(".time");
+    let saopauloTime = moment().tz("America/Sao_Paulo");
 
-    brazilDateElement.innerHTML = brazilTime.format("MMMM Do YYYY");
-    brazilTimeElement.innerHTML = brazilTime.format(
+    saopauloDateElement.innerHTML = saopauloTime.format("MMMM Do YYYY");
+    saopauloTimeElement.innerHTML = saopauloTime.format(
+      "HH:mm:ss [<small>] A[ </small>]"
+    );
+  }
+  //   Tokyo
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
+
+    tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
+      "HH:mm:ss [<small>] A[ </small>]"
+    );
+  }
+  //London
+  let londonElement = document.querySelector("#london");
+  if (londonElement) {
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
+    let londonTime = moment().tz("Europe/London");
+
+    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
+    londonTimeElement.innerHTML = londonTime.format(
       "HH:mm:ss [<small>] A[ </small>]"
     );
   }
