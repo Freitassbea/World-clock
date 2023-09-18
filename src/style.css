@@ -65,7 +65,7 @@ footer {
   vertical-align: middle;
 }
 
-.link {
+a {
   color: #ff0000;
   text-decoration: none;
 }
